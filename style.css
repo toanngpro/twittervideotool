@@ -1,0 +1,571 @@
+/*
+ Theme Name:   Twitter Video Tool
+ Theme URI:    https://twittervideotool.com
+ Description:  Child theme for Flatsome, customized for Twitter Video Tool
+ Author:       Your Name
+ Author URI:   https://twittervideotool.com
+ Template:     flatsome
+ Version:      1.0.0
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #eff6ff, #ffffff, #faf5ff);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #2563eb, #9333ea);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.header-title span {
+    font-size: 2rem;
+    margin-right: 0.75rem;
+}
+
+.header-title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.warning-banner {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ef4444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.warning-banner span {
+    margin-right: 0.5rem;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+/* Download Section */
+.download-card {
+    max-width: 40rem;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.card-header {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    color: #4b5563;
+}
+
+.card-content {
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.url-input {
+    width: 100%;
+    padding: 1.5rem 1rem 1.5rem 2.5rem;
+    font-size: 1.125rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.375rem;
+    transition: border-color 0.2s;
+}
+
+.url-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.input-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.download-btn {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-btn:hover {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    transform: scale(1.02);
+}
+
+.download-btn span {
+    margin-right: 0.5rem;
+}
+
+.keywords-box {
+    background-color: #eff6ff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.keywords-title {
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+}
+
+.keywords-text {
+    font-size: 0.875rem;
+    color: #2563eb;
+}
+
+/* Usage Guide */
+.usage-guide {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .guide-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.guide-card {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.guide-card.download {
+    background: linear-gradient(to bottom right, #f0fdf4, #d1fae5);
+}
+
+.guide-card.save {
+    background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+}
+
+.guide-card.notice {
+    background: linear-gradient(to bottom right, #fffbeb, #fed7aa);
+}
+
+.guide-header {
+    padding: 1.5rem;
+}
+
+.guide-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.guide-title.green {
+    color: #15803d;
+}
+
+.guide-title.blue {
+    color: #1d4ed8;
+}
+
+.guide-title.orange {
+    color: #c2410c;
+}
+
+.guide-title span {
+    margin-right: 0.5rem;
+}
+
+.guide-content {
+    padding: 1.5rem;
+    padding-top: 0;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.step-number {
+    background-color: #22c55e;
+    color: white;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.step-text {
+    color: #374151;
+}
+
+.device-info {
+    margin-bottom: 1rem;
+}
+
+.device-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.device-header span {
+    margin-right: 0.5rem;
+}
+
+.device-name {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.device-text {
+    color: #374151;
+    margin-left: 1.75rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .faq-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.faq-card {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    border: none;
+    text-align: left;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 1rem;
+}
+
+.accordion-content.open {
+    max-height: 200px;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.accordion-text {
+    color: #4b5563;
+}
+
+.warning-card {
+    background: linear-gradient(to bottom right, #fffbeb, #fed7aa);
+}
+
+.info-card {
+    background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+}
+
+.info-text {
+    color: #374151;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.subsection-title {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.subsection-text {
+    color: #374151;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #1f2937, #111827);
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer-brand {
+        margin-bottom: 0;
+    }
+}
+
+.footer-brand span {
+    margin-right: 0.5rem;
+}
+
+.brand-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-info {
+        text-align: right;
+    }
+}
+
+.copyright {
+    color: #d1d5db;
+    margin-bottom: 0.5rem;
+}
+
+.made-with {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .made-with {
+        justify-content: flex-end;
+    }
+}
+
+.heart {
+    color: #ef4444;
+    margin: 0 0.25rem;
+}
+
+.footer-notice {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #374151;
+    text-align: center;
+}
+
+.notice-text {
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .header-title h1 {
+        font-size: 2rem;
+    }
+    
+    .header-subtitle {
+        font-size: 1rem;
+    }
+    
+    .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/*hiệu ứng cho form get video*/
+
+@keyframes lightningShine {
+    0% {
+        /* Dimmer blue start/end state */
+        box-shadow:
+            /* Outer */ 0 0 7px 2px rgba(0, 170, 255, 0.3),
+            /* Inner */ inset 0 0 5px 1px rgba(0, 170, 255, 0.2);
+        border-color: rgba(0, 170, 255, 0.4);
+    }
+    40% {
+        /* Bright cyan flash */
+        box-shadow:
+            /* Outer */ 0 0 18px 4px rgba(0, 255, 255, 0.8),
+            /* Inner */ inset 0 0 12px 3px rgba(0, 255, 255, 0.6);
+        border-color: rgba(100, 255, 255, 0.7);
+    }
+    60% {
+        /* Slightly different bright flash */
+        box-shadow:
+            /* Outer */ 0 0 15px 3px rgba(150, 255, 255, 0.7),
+            /* Inner */ inset 0 0 10px 2px rgba(150, 255, 255, 0.5);
+        border-color: rgba(150, 255, 255, 0.6);
+    }
+    100% {
+        /* Back to dimmer blue */
+        box-shadow:
+            /* Outer */ 0 0 7px 2px rgba(0, 170, 255, 0.3),
+            /* Inner */ inset 0 0 5px 1px rgba(0, 170, 255, 0.2);
+        border-color: rgba(0, 170, 255, 0.4);
+    }
+}
+/* --- End Keyframes --- */
+
+
+.url-input {
+    animation: lightningShine 2s infinite linear;
+    cursor: pointer;
+}
+
+.lightning-svg { /* Outer electric snake SVG */
+    position: absolute;
+    /*max-width: 240px;*/
+    min-width:100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    filter:
+        drop-shadow(0 0 8px #00ffff)
+        drop-shadow(0 0 15px #00aaff);
+    overflow: visible;
+    /* border-radius: 10px; */ /* Match box radius if needed */
+}
+
+.electric-snake { /* The snake path itself */
+    will-change: stroke-width, opacity, d;
+}
